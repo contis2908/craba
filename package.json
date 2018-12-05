@@ -1,0 +1,15 @@
+{
+  "name": "craba",
+  "version": "1.0.0",
+  "description": "Server Packages",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Niklas Lang - contis2908@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "npm": "^6.4.1"
+  }
+}
