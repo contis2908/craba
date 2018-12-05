@@ -6,12 +6,12 @@ const app = express();
 
 app.get('/', (req, res) => {
 
-  res.sendFile(path.join(__dirname + '/app/index.html'));
+  res.sendFile(path.join(__dirname + '/app/build/bundle/index.html'));
 });
 
 
 //set static path
-app.use(express.static(path.join(__dirname, 'app')));
+app.use(express.static(path.join(__dirname, 'app/build/bundle')));
 	
 app.get('/', (req, res) => {
 	res.render('index');
