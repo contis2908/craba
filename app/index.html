@@ -81,11 +81,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </style>
   </head>
   <body>
-    <my-element mood="happy"></my-element>
+    <app-lit-el></app-lit-el>
+    <app-lit text="Native JS Webcomponent - lit-html"></app-lit>
+    <app-native text="Native JS Webcomponent"></app-native>
     <noscript>
       Please enable JavaScript to view this website.
     </noscript>
-    <script type="module" src="app.js" crossorigin></script>
+    <script type="module" src="app-lit-el.js" crossorigin></script>
+    <script type="module" src="app-lit.js" crossorigin></script>
+    <script type="module" src="app-native.js" crossorigin></script>
     <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
   </body>
 </html>
