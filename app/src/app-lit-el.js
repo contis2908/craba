@@ -14,18 +14,16 @@ class AppLitEl extends LitElement {
     }
 
     render() {
-      return html `
-      <!-- Style -->
-      <style>
-        .mood {
-          color: red;
-          font-size: 35px;
-        }
-      </style>
-      <!-- Content -->
-      <section class="mood">
-        Polymer Web Components - ${this.elem}
-      </section>
+        return html `
+        <style>
+            .mood {
+                color: red;
+                font-size: 35px;
+            }
+        </style>
+        <section class="mood">
+            Polymer Web Components - ${this.elem}
+        </section>
       `;
     }
 

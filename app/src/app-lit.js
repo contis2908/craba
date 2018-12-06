@@ -9,7 +9,14 @@ class AppLit extends HTMLElement {
         var shadow = this.attachShadow({ mode: 'open' });
 
 
-        const printElementName = (elem) => html `<div style="color:red;font-size:35px;">Native JS Webcomponent - ${elem}!</div>`;
+        const printElementName = (elem) => html `
+        	<style>
+        		.color{color:red;}
+        	</style>
+        	<div class="color" style="font-size:35px;">
+        		Native JS Webcomponent - ${elem}!
+        	</div>
+        `;
         render(printElementName('Lit-HTML'), shadow);
 
     }

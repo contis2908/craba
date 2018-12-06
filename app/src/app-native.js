@@ -5,20 +5,18 @@ class AppNative extends HTMLElement {
 
     // Create a shadow root
 	var shadow = this.attachShadow({mode: 'open'});
-
+	//content
     var info = document.createElement('span');
 	info.setAttribute('class','info');
-
-	var text = this.getAttribute('text');
-	info.textContent = text;
-
+	info.textContent = this.getAttribute('text');
+	//Style
 	var style = document.createElement('style');
-
 	style.textContent = '.info {' +
 		'color: red;' +
 		'font-size: 35px' +
 	'}'
 
+	// append
 	shadow.appendChild(style);
 	shadow.appendChild(info);
 
