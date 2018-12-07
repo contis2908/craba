@@ -2,7 +2,11 @@
     "npm": true,
     "moduleResolution": "node",
     "entrypoint": "index.html",
-    "shell": "app-lit-elem.js",
+    "fragments": [
+        "src/app-lit-el.js",
+        "src/app-lit.js",
+        "src/app-native.js"
+    ],
     "extraDependencies": [
         "node_modules/@webcomponents/webcomponentsjs/**"
     ],
